@@ -1,0 +1,1 @@
+DROP INDEX IF EXISTS teacher_name_idx;
