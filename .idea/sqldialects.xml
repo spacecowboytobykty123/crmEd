@@ -13,6 +13,9 @@
     <file url="file://$PROJECT_DIR$/migrations/000005_create_teachers_indexes.up.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations/000006_create_users_table.down.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations/000006_create_users_table.up.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations/000007_create_students_table.up.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/000007_create_studentStatus_enum.down.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/000007_create_studentStatus_enum.up.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/000008_create_students_table.down.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/000008_create_students_table.up.sql" dialect="PostgreSQL" />
   </component>
 </project>
