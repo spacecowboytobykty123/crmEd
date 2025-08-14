@@ -20,5 +20,11 @@ func (app *application) routes() http.Handler {
 
 	router.HandlerFunc(http.MethodPost, "/v1/user", app.registerUserHandler)
 
+	router.HandlerFunc(http.MethodGet, "/v1/cabinet/:id", app.getCabinetHandler)
+	router.HandlerFunc(http.MethodPost, "/v1/cabinet", app.createCabinetHandler)
+	router.HandlerFunc(http.MethodPatch, "/v1/cabinet/:id", app.updateCabinetHandler)
+	router.HandlerFunc(http.MethodDelete, "/v1/cabinet/:id", app.deleteCabinetHandler)
+	router.HandlerFunc(http.MethodGet, "/v1/cabinets", app.listCabinetsHandler)
+
 	return app.recoverPanic(app.rateLimit(router))
 }

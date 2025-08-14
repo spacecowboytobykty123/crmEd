@@ -61,6 +61,7 @@ func (app *application) getTeacherHandler(w http.ResponseWriter, r *http.Request
 	id, err := app.readIDParam(r)
 	if err != nil {
 		app.notFoundResponse(w, r)
+		return
 	}
 
 	teacher, err := app.models.Teachers.GetTeacher(id)
