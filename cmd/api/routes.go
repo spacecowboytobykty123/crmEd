@@ -26,5 +26,11 @@ func (app *application) routes() http.Handler {
 	router.HandlerFunc(http.MethodDelete, "/v1/cabinet/:id", app.deleteCabinetHandler)
 	router.HandlerFunc(http.MethodGet, "/v1/cabinets", app.listCabinetsHandler)
 
+	router.HandlerFunc(http.MethodGet, "/v1/subscription/:id", app.getSubHandler)
+	router.HandlerFunc(http.MethodPost, "/v1/subscription/", app.createSubHandler)
+	router.HandlerFunc(http.MethodPatch, "/v1/subscription/:id", app.updateSubHandler)
+	router.HandlerFunc(http.MethodDelete, "/v1/subscription/:id", app.deleteSubscriptionHandler)
+	router.HandlerFunc(http.MethodGet, "/v1/subscriptions", app.listSubscriptionsHandler)
+
 	return app.recoverPanic(app.rateLimit(router))
 }

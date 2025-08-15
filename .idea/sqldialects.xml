@@ -19,5 +19,11 @@
     <file url="file://$PROJECT_DIR$/migrations/000008_create_students_table.up.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations/000009_create_cabinet_table.down.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations/000009_create_cabinet_table.up.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/subscriptionMigrations/000001_create_subscriptionType_enum.down.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/subscriptionMigrations/000001_create_subscriptionType_enum.up.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/subscriptionMigrations/000002_create_subscription_table.down.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/subscriptionMigrations/000002_create_subscription_table.up.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/subscriptionMigrations/000003_create_subscription_check_constraints.down.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/subscriptionMigrations/000003_create_subscription_check_constraints.up.sql" dialect="PostgreSQL" />
   </component>
 </project>

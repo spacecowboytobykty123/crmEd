@@ -1,0 +1,1 @@
+CREATE TYPE sub_status AS enum ('период', 'количество');
